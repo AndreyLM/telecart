@@ -1,0 +1,12 @@
+version: '3'
+
+services: 
+  mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - 1883:1883
+      - 8883:8883
+    volumes: 
+      - ./mqtt/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./mqtt/mosquitto.passwd:/mosquitto/config/mosquitto.passwd:ro
+

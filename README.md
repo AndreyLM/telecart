@@ -14,4 +14,7 @@
 ## Should do
 1. Random clientID for mqtt
 2. When service is starting, check first message for avoiding duplication or could be better to use **ID** from **mqtt** and store it in db (now **id** is auto)
+3. Add more configurations (mqtt user, password, dns and etc.)
+4. Add **headers** for public functions
+
 
